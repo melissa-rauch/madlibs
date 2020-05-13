@@ -42,16 +42,19 @@ def greet_person():
                            compliment=compliment)
 @app.route('/game')
 def show_madlib_form():
+    
+    return render_template("game.html")
     #get the users response to a yes or no qestion
     #on "would you like to play a game"
 
     #if they say no, return a rendered template goodbye.html
-
-    #if yes render templat game.html
+    # prints a message of thats too bad, see you later!
+    #if yes render template game.html
     #form should have action = /madlib
 
 @app.route('/madlib')
 def show_madlib():
+    pass
     # show rendered template madlib.html
     """There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
     When {{ person }} went to pick it up, it burst into flames in a totally
