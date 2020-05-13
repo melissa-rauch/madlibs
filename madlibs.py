@@ -40,6 +40,22 @@ def greet_person():
     return render_template("compliment.html",
                            person=player,
                            compliment=compliment)
+@app.route('/game')
+def show_madlib_form():
+    #get the users response to a yes or no qestion
+    #on "would you like to play a game"
+
+    #if they say no, return a rendered template goodbye.html
+
+    #if yes render templat game.html
+    #form should have action = /madlib
+
+@app.route('/madlib')
+def show_madlib():
+    # show rendered template madlib.html
+    """There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+    When {{ person }} went to pick it up, it burst into flames in a totally
+    {{ adjective }} way."""
 
 
 if __name__ == '__main__':
